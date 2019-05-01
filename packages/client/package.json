@@ -1,0 +1,33 @@
+{
+  "name": "@serialport-net/client",
+  "version": "0.1.0",
+  "main": "./cjs/index.js",
+  "module": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "dependencies": {
+    "@babel/runtime": "7.4.4",
+    "@types/serialport": "^7.0.3",
+    "@types/ws": "^6.0.1",
+    "ws": "^6.2.1"
+  },
+  "devDependencies": {
+    "@types/jest": "24.0.11",
+    "tscomp-scripts": "1.0.0-rc.1"
+  },
+  "tscomp": {
+    "mode": "lib"
+  },
+  "scripts": {
+    "build": "tscomp build",
+    "test": "tscomp test",
+    "eject": "tscomp eject",
+    "watch": "tscomp watch",
+    "prepack": "tscomp build"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "bracketSpacing": false,
+    "semi": false
+  }
+}

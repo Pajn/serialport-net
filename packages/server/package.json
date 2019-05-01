@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "0.1.0",
+  "private": true,
+  "bin": {},
+  "dependencies": {
+    "@babel/runtime": "7.4.4",
+    "@types/node": "11.13.8",
+    "@types/pino": "^5.8.6",
+    "@types/serialport": "^7.0.2",
+    "@types/ws": "^6.0.1",
+    "pino": "^5.12.3",
+    "serialport": "^7.1.5",
+    "ws": "^6.2.1"
+  },
+  "devDependencies": {
+    "@types/jest": "24.0.11",
+    "prettier": "^1.17.0",
+    "tscomp-scripts": "1.0.0-rc.1"
+  },
+  "tscomp": {
+    "mode": "server"
+  },
+  "scripts": {
+    "build": "tscomp build",
+    "test": "tscomp test",
+    "eject": "tscomp eject",
+    "start": "tscomp start",
+    "watch": "tscomp watch",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx}"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "bracketSpacing": false,
+    "semi": false
+  }
+}
